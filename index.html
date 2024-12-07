@@ -22,8 +22,9 @@
                 text-align: center;
             }
 
-            img {
-                max-width: 100%;
+            p {
+                font-size: 18px;
+                line-height: 1.5;
             }
 
             button {
@@ -69,33 +70,52 @@
             }
 
             .gardening-intro-picture {
+                width: 100%;
+                height: 430px;
+                object-fit: cover;
                 border-radius: 10px;
                 transition: all 150ms ease-in-out;
             }
 
             .gardening-intro-picture:hover {
-                filter: contrast (50%);
-                transform: scale(1.2);
+                filter: contrast(80%);
+                transform: scale(1.1);
+            }
 
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 15px;
+                margin: 15px auto;
+            }
+
+            .grid img {
+                width: 100%;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            .grid img:hover {
+                filter: contrast (80%);
+                transform: scale(1.2);
+                transition: all 150ms ease-in-out;
             }
         </style>
-
-
-
         <button class="theme-button"> Dark Theme </button>
         <div class=" container">
             <h1> Gardening </h1>
             <h2> My favourite hobby </h2>
             <a href="https://en.wikipedia.org/wiki/Gardening" target="_blank">
-                <img src="https://i.pinimg.com/736x/00/a8/1d/00a81d530855a9a209e94afbc1043076.jpg" alt=""
+                <img src="https://i.pinimg.com/736x/ec/f4/df/ecf4dfa48e98540bfc23459cb8880913.jpg" alt=""
                     class=" gardening-intro-picture" />
             </a>
-            <img src="https://i.pinimg.com/736x/a7/63/28/a763282cb16d1fb1de8a67e47bb7f35f.jpg" alt="" />
-            <img src="https://i.pinimg.com/236x/7e/d9/80/7ed9801247efc7ec0f3ab10034718b29.jpg" alt="" />
-            <img src="https://i.pinimg.com/736x/75/a9/06/75a906bf8172f30705b54d22686fe232.jpg" alt="" />
-            <img src="
-           https://i.pinimg.com/474x/08/12/63/0812632456d34ea6d1410c73d2dfef31.jpg" alt="" />
+            <div class="grid">
+                <img src="https://i.pinimg.com/736x/a7/63/28/a763282cb16d1fb1de8a67e47bb7f35f.jpg" alt="" />
+                <img src="https://i.pinimg.com/736x/c9/50/d3/c950d306b31c579fd773874974fcddd0.jpg" alt="" />
+                <img src="https://i.pinimg.com/236x/7e/d9/80/7ed9801247efc7ec0f3ab10034718b29.jpg" alt="" />
+                <img src="https://i.pinimg.com/736x/3b/26/5f/3b265f5a3441995ca25379edca2a5a3c.jpg" alt="" />
 
+            </div>
             <p>
                 Gardening is the process of growing plants for their vegetables, fruits, flowers, herbs, and appearances
                 within a
