@@ -5,9 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gardening - My hobby </title>
-    </head>
-
-    <body>
         <style>
             body {
                 background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
@@ -100,7 +97,23 @@
                 transform: scale(1.2);
                 transition: all 150ms ease-in-out;
             }
+
+            .dark {
+                background: black;
+                color: white;
+            }
+
+            .dark .container {
+                background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+            }
+
+            .dark a {
+                color: aqua;
+            }
         </style>
+    </head>
+
+    <body>
         <button class="theme-button"> Dark Theme </button>
         <div class=" container">
             <h1> Gardening </h1>
@@ -133,6 +146,24 @@
             Coded by <a href="https://www.shecodes.io/graduates/105285-angela-mugabe" target="_blank">Angela Mugabe
             </a>
         </footer>
+        <script>
+            function changeTheme() {
+                let body = document.querySelector("body ");
+
+                if (body.classList.contains("dark")) {
+                    body.classList.remove("dark");
+                } else { body.classList.add("dark"); }
+            }
+
+
+            let themeButton = document.querySelector(".theme-button");
+            themeButton.addEventListener("click", changeTheme);
+
+
+
+
+        </script>
+
 
     </body>
 
